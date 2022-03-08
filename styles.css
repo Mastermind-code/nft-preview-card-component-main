@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: hsl(216, 50%, 16%);
+  height: 650px;
+  width: 400px;
+  margin: 15px;
+  padding: 20px;
+  border: 5px solid re;
+  border-radius: 25px;
+}
+
+.image {
+  height: 350px;
+  /*background-image: url(images/image-equilibrium.jpg);
+  background-size: cover;*/
+  margin-bottom: 20px;
+  border-radius: 25px;
+  position: relative;
+}
+.top-image {
+  height: 350px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+  cursor: pointer;
+}
+
+.overlay:hover {
+  opacity: 0.6;
+}
+
+.eyeImage {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+}
+.main {
+  color: white;
+  text-decoration: none;
+}
+.main:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.details {
+  padding: 20px 0;
+}
+
+.flex-column {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  color: hsl(178, 100%, 50%);
+}
+
+.line {
+  height: 1px;
+  background-color: hsl(215, 51%, 70%);
+}
+
+.footer {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.img {
+  height: 40px;
+  width: 40px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50px;
+  background-image: url(images/image-avatar.png);
+  background-size: cover;
+}
+
+.content {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.footer-details {
+  padding-left: 20px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: hsl(178, 100%, 50%);
+}
